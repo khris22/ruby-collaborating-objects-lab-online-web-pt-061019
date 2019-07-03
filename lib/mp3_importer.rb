@@ -23,7 +23,6 @@ class MP3Importer
       #
       # a = Artist.find_or_create_by_name(artist_name)
       # a.add_song(Song.new(song_name))
-    end
   end
 
 
