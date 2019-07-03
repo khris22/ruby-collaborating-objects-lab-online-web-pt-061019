@@ -15,14 +15,14 @@ class MP3Importer
 
   def import
 # ["Real Estate - Green Aisles - country.mp3"]
-    files.each do |file|
+    files.each{|file| Song.new_by_filename(file)}
       # binding.pry
-      parts = file.split(" - ")
-      artist_name = parts[0]
-      song_name = parts[1]
-
-      a = Artist.find_or_create_by_name(artist_name)
-      a.add_song(Song.new(song_name))
+      # parts = file.split(" - ")
+      # artist_name = parts[0]
+      # song_name = parts[1]
+      #
+      # a = Artist.find_or_create_by_name(artist_name)
+      # a.add_song(Song.new(song_name))
     end
   end
 
