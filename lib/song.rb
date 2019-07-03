@@ -8,15 +8,15 @@ class Song
     @@all = []
   end
 
-  def self.all 
-    @@all 
+  def self.all
+    @@all
   end
 
   def save
     @@all << self
     self
   end
-  
+
 
   def artist=(artist)
     @artist = artist
