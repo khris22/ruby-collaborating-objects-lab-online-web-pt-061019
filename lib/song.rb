@@ -1,5 +1,5 @@
 class Song
-  attr_accessor :name 
+  attr_accessor :name
   attr_reader :artist
   @@all = []
 
@@ -14,7 +14,7 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    
+
   end
 
 end
