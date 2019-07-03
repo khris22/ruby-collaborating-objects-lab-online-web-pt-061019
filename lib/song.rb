@@ -9,4 +9,12 @@ class Song
     @@all = []
   end
 
+  def artist=(artist)
+
+  end
+  
+  def self.new_from_filename(filename)
+    
+  end
+
 end
