@@ -7,7 +7,7 @@ class MP3Importer
 
   def files
     # binding.pry
-    Dir.entries(path)[1..-2]
+    Dir.entries(path)[1..-2].reject{|f| f == '.' || f == '..'}
     #parse > when you parse directory in ruby,
     # there will be entries that always have "." and ".."
   end
